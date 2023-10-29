@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import fun_static_model as fsm
+from .. import fun_static_model as fsm
 import altair as alt
 
 st.set_page_config(

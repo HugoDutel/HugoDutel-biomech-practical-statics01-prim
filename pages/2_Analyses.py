@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from fun.fun_static_model import fun_static_model as fsm
+from fun.fun_static_model import fun_insert_pcsa
 import altair as alt
 
 st.set_page_config(
@@ -38,7 +38,7 @@ if (muscle_file and geom_file) is not None:
     
     list_df_muscle_pcsa = []
     for i in grouped_muscle.groups:
-        df_muscle_pcsa_i = fsm.fun_insert_pcsa(grouped_muscle.get_group(i), grouped_pcsa.get_group(i))
+        df_muscle_pcsa_i = fun_insert_pcsa(grouped_muscle.get_group(i), grouped_pcsa.get_group(i))
         list_df_muscle_pcsa.append(df_muscle_pcsa_i)
         
     df_muscle_pcsa = pd.concat(list_df_muscle_pcsa)

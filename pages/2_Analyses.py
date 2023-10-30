@@ -13,7 +13,10 @@ st.set_page_config(
 st.title('Analyses')
 
 st.header('Jaw muscle morphology of primates  :monkey_face:')
-st.markdown("Our objective is to calculate the forces and joint moment acting on the mandible during an incisor bite. Prior to modelling, data on the morphology of the species were collected during quantitative dissections and CT-scans of the head of each species were performed. The **head width** and **lower jaw length** (in mm) and **muscle physiological cross section areas** (PCSA, cm<sup>2</sup>) for the three muscle groups in each species are listed in the table below.", unsafe_allow_html=True)
+st.markdown("**Our objective is to calculate the forces and joint moment acting on the mandible during an incisor bite.** 
+
+
+Prior to modelling, data on the morphology of the species were collected during quantitative dissections and CT-scans of the head of each species were performed. The **head width** and **lower jaw length** (in mm) and **muscle physiological cross section areas** (PCSA, cm<sup>2</sup>) for the three muscle groups in each species are listed in the table below.", unsafe_allow_html=True)
 
 data_morpho = pd.DataFrame({'species':['M. fascicularis', 'M. murinus'], 'head_width':[58, 22], 'lower_jaw_length':[53, 22], 'pcsa_masseter':[2.417, 0.664*1.2], 'pcsa_pterygoid_medial':[1.11, 0.146*1.2], 'pcsa_temporalis':[3.596*1.1, 0.623*1.2], 'pcsa_total':[7.123, 1.433*1.2]})
 st.table(data_morpho)

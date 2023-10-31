@@ -25,9 +25,9 @@ The data extracted from Blender are the:
 These data will serve as an input for our static analysis (see Analyses page). You will save the measurements made in Blender into two **.csv files**: one for the geometrical data of the skeleton (joint and contact points), and one for the muscles. Templates of these .csv files are provided.
 ''')
 
-
-st.image('mouse_lemur_muscles_small.jpg', caption='Musculoskeletal model of the mouse lemur. The muscles are represented by a series of strands, whose colours corresponding to the different muscle groupes.', width=300)
-
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image('mouse_lemur_muscles_small.jpg', caption='Musculoskeletal model of the mouse lemur. The muscles are represented by a series of strands, whose colours corresponding to the different muscle groupes.', width=300)
 
 st.header('Blender part 1: Building joints and contact points')
 st.markdown('''This pdf provide you with a step-by-step tutorial for building the TMJ and bite point in Blender.

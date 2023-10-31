@@ -26,7 +26,7 @@ These data will serve as an input for our static analysis (see Analyses page). Y
 ''')
 
 
-st.image('mouse_lemur_muscles_small.jpg', caption='Musculoskeletal model of the mouse lemur (*M. murinus*)')
+st.image('mouse_lemur_muscles_small.png', caption='Musculoskeletal model of the mouse lemur (*M. murinus*)')
 
 
 st.header('Blender part 1: Building joints and contact points')
